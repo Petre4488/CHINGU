@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Space Journey </title> 
+    <link rel="icon" href="media/site logo.png">
+    <link rel="stylesheet" href="launch.css">   
+    <script src="https://kit.fontawesome.com/f3a9173b04.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#icon').click(function(){
+                $('ul').toggleClass('show')
+            });
+          });
+    </script>
+</head>
+<body>
+    <button id="launchBtn" onclick="opacity()">Launch!</button>
+        <div id="btnContent" class="btnContent">
+                <form class="box" action="launch.html">
+                    <h1>    
+                        Login
+                    </h1>
+                    <input type="text" name="" placeholder="Enter Username" id="username">
+                    <input type="password" name="" placeholder="Enter Password" id="password">
+                    <input type="submit" name="" value="Login" onclick="validate()">
+                </form>
+                </div>
+            </div>
+            <div id="overlay"></div>
+        </div>
+        <nav>
+              <label class="logo">Space Journey</label>
+            <ul>
+                <li><a class="btnD2" href="#">About</a></li>
+            </ul>
+            <label id="icon">
+                <i class="fas fa-bars"></i>
+            </label>
+        </nav>
+        <section></section>
+        <script src="script.js"></script>
+</body>
+</html>

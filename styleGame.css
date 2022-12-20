@@ -1,0 +1,109 @@
+body{
+    overflow-y: hidden;
+    overflow-x: hidden;
+    margin: 0;
+    background-image: url(media/galaxy.jpg); 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding: 0;
+}
+
+.fullscreen{
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+}
+
+#rocket{
+    display: block;
+    width: 5vh;
+    height: 5vh;
+    position: relative;
+    top: 50vh;
+    left: -40vh;
+    animation-play-state: paused;
+    animation-name: rocket;
+    animation-duration: 4s;
+    animation-iteration-count: 1 ;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+#earth{
+    position: relative;
+    width: 40vh;
+    height: 40vh;
+    display: block;
+    top: 50vh;
+    left: -88vh;
+}
+
+#mars{
+    position: relative;
+    width: 50vh;
+    height: 50vh;   
+    top: -70vh;
+    left:80vh
+}
+
+@keyframes rocket{   
+    0%  {top: 50vh; left:-40vh; }
+    25% {top: 20vh; left:-10vh; transform: rotate(30deg); }
+    100% {top: 10vh; left:90vh; transform: rotate(40deg); }
+}
+
+#startBtn {
+    position: absolute;
+    align-items: center;
+    background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+    border: 0;
+    border-radius: 8px;
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    display: flex;
+    font-family: Phantomsans, sans-serif;
+    font-size: 20px;
+    justify-content: center;
+    line-height: 1em;
+    max-width: 100%;
+    min-width: 140px;
+    padding: 3px;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    cursor: pointer;
+    top: 90vh;
+  }
+  
+  #startBtn:active,
+  #startBtn:hover {
+    outline: 0;
+  }
+  
+  #startBtn span {
+    background-color: rgb(5, 6, 45);
+    padding: 16px 24px;
+    border-radius: 6px;
+    width: 100%;
+    height: 100%;
+    transition: 300ms;
+  }
+  
+  #startBtn:hover span {
+    background: none;
+  }
+  
+  @media (min-width: 768px) {
+    .button-64 {
+      font-size: 24px;
+      min-width: 196px;
+    }
+  }
